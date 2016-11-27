@@ -21,7 +21,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.yoav.mynewsunshine.DetailActivity"
+        android:name="com.example.yoav.mynewsunshine.DetailActivity"
+        android:label="@string/app_name"
+        android:parentActivityName="com.example.yoav.mynewsunshine.MainActivity" >
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.yoav.mynewsunshine.MainActivity" />
+    </activity>
+        <activity
+            android:name="com.example.yoav.mynewsunshine.SettingsActivity"
             android:label="@string/app_name"
             android:parentActivityName="com.example.yoav.mynewsunshine.MainActivity" >
             <meta-data
