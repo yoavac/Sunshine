@@ -36,6 +36,19 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.yoav.mynewsunshine.MainActivity" />
         </activity>
+        <provider
+            android:authorities="com.example.yoav.mynewsunshine"
+            android:name="com.example.yoav.mynewsunshine.data.WeatherProvider"
+            android:enabled="true"
+            android:exported="true"
+            >
+        </provider>
     </application>
+
+    <permission
+        android:name="com.example.yoav.mynewsunshine.LICENSE_TO_KILL"
+        android:protectionLevel="dangerous"
+        android:label="License to Kill">
+    </permission>
 
 </manifest>
